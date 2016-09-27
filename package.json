@@ -9,6 +9,7 @@
   "dependencies": {
     "async": "^2.0.1",
     "get-ip-address": "https://github.com/paolochiodi/get-ip-address.git",
+    "kubernetes-pod-auth": "https://github.com/paolochiodi/kubernetes-pod-auth",
     "request": "^2.75.0"
   }
 }
