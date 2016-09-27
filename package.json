@@ -7,9 +7,9 @@
   "author": "Paolo Chiodi (https://github.com/paolochiodi)",
   "license": "MIT",
   "dependencies": {
-    "async": "^2.0.1",
-    "get-ip-address": "https://github.com/paolochiodi/get-ip-address.git",
-    "kubernetes-pod-auth": "https://github.com/paolochiodi/kubernetes-pod-auth",
-    "request": "^2.75.0"
+    "async": "2.0.1",
+    "get-ip-address": "1.0.0",
+    "kubernetes-pod-auth": "1.0.0",
+    "request": "2.75.0"
   }
 }
