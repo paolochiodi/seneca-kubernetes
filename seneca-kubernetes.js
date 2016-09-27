@@ -24,7 +24,7 @@ function get_credentials(done) {
       return done(err)
     }
 
-    done(null, resp.ca, results.token)
+    done(null, results.ca, results.token)
   })
 }
 
