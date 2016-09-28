@@ -77,14 +77,6 @@ Licensed under [MIT][].
 
 [Sponsor]: http://nearform.com
 [Logo]: http://senecajs.org/files/assets/seneca-logo.png
-[npm-badge]: https://badge.fury.io/js/seneca-zipkin-tracer.svg
-[npm-url]: https://badge.fury.io/js/seneca-zipkin-tracer
-[travis-badge]: https://api.travis-ci.org/senecajs-labs/seneca-zipkin-tracer.svg
-[travis-url]: https://travis-ci.org/senecajs-labs/seneca-zipkin-tracer
-[coveralls-badge]:https://coveralls.io/repos/senecajs-labs/seneca-zipkin-tracer/badge.svg?branch=master&service=github
-[coveralls-url]: https://coveralls.io/github/senecajs-labs/seneca-zipkin-tracer?branch=master
-[david-badge]: https://david-dm.org/senecajs-labs/seneca-zipkin-tracer.svg
-[david-url]: https://david-dm.org/senecajs-labs/seneca-zipkin-tracer
 [gitter-badge]: https://badges.gitter.im/senecajs/seneca.png
 [gitter-url]: https://gitter.im/senecajs/seneca
 [MIT]: ./LICENSE
