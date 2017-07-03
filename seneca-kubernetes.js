@@ -45,6 +45,10 @@ function get_pods (k8s_url, done) {
 function kubernetes_plugin (options) {
   const seneca = this
 
+  if (!options.k8s_url) {
+    options.k8s_url = 'kubernetes'
+  }
+
   this.add('init:kubernetes', function (args, done) {
 
     get_pods(options.k8s_url, function got_pods (err, pods) {
