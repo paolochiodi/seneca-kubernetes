@@ -5,7 +5,7 @@ const find_ip = require('get-ip-address')
 const get_credentials = require('kubernetes-pod-auth')
 
 
-function get_pods (done) {
+function get_pods (k8s_url, done) {
   get_credentials(function (err, ca, token) {
 
     if (err) {
@@ -13,7 +13,7 @@ function get_pods (done) {
     }
 
     const options = {
-      url: 'https://kubernetes/api/v1/pods',
+      url: `https://${k8s_url}/api/v1/pods`,
       ca: ca,
       headers: {
         "Authorization": "Bearer " + token
@@ -45,9 +45,13 @@ function get_pods (done) {
 function kubernetes_plugin (options) {
   const seneca = this
 
+  if (!options.k8s_url) {
+    options.k8s_url = 'kubernetes'
+  }
+
   this.add('init:kubernetes', function (args, done) {
 
-    get_pods(function got_pods (err, pods) {
+    get_pods(options.k8s_url, function got_pods (err, pods) {
       if (err) {
         return done(err)
       }
